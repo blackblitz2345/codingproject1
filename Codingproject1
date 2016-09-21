@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<style>
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body { 
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+}
+
+/* STRUCTURE */
+
+#pagewrap {
+ padding: 5px;
+ width: 960px;
+ margin: 20px auto;
+}
+header {
+ height: 100px;
+ padding: 0 15px;
+}
+#content {
+ width: 290px;
+ float: right;
+ padding: 5px 15px;
+}
+
+#middle {
+ width: 294px; /* Account for margins + border values */
+ float: left;
+ padding: 5px 15px;
+ margin: 0px 5px 5px 5px;
+}
+
+#sidebar {
+ width: 270px;
+ padding: 5px 15px;
+ float: left;
+}
+footer {
+ clear: both;
+ padding: 0 15px;
+}
+
+@media screen and (max-width: 980px) {
+ 
+ #pagewrap {
+  width: 94%;
+ }
+ #content {
+  width: 41%;
+  padding: 1% 4%;
+ }
+ #middle {
+  width: 41%;
+  padding: 1% 4%;
+  margin: 0px 0px 5px 5px;
+  float: right;
+ }
+ 
+ #sidebar {
+  clear: both;
+  padding: 1% 4%;
+  width: auto;
+  float: none;
+ }
+ header, footer {
+  padding: 1% 4%;
+ }
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+ #content {
+  width: auto;
+  float: none;
+ }
+ 
+ #middle {
+  width: auto;
+  float: none;
+  margin-left: 0px;
+ }
+ 
+ #sidebar {
+  width: auto;
+  float: none;
+ }
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+ header {
+  height: auto;
+ }
+ h1 {
+  font-size: 2em;
+ }
+ #sidebar {
+  display: none;
+ }
+
+}
+
+
+#content {
+ background: #f8f8f8;
+}
+#sidebar {
+ background: #f0efef;
+}
+header, #content, #middle, #sidebar {
+ margin-bottom: 5px;
+}
+
+#pagewrap, header, #content, #middle, #sidebar, footer {
+ border: solid 1px #ccc;
+}
+
+</style>
+</head>
+<body>
+<div id="pagewrap">
+
+ <header>
+  <h1>Feel Good Inc.</h1>
+ </header>
+  
+ <section id="content">
+  <h2>Welcome to the Gym Reds</h2>
+<h3>by: This Guy</h3>
+ <img src="https://content.nike.com/content/dam/one-nike/en_us/season-2016-fl/shop/Launch/07-2016/air-jordan-12-retro-gym-red-white/AIR-JORDAN-12-RETRO-RED-WHITE-MAIN.jpg.transform/default/AIR-JORDAN-12-RETRO-RED-WHITE-MAIN.jpg" alt="gym_12" style="width:290px;height:300px;"> 
+ <p><a href="http://www.nike.com/us/en_us/launch/c/2016-07/air-jordan-12-retro-gym-red-white">Click here and check them out!</a></p>
+ </section>
+ 
+ <section id="middle">
+  <h2>Enjoy the London 10's</h2>
+<h3>by: That Guy</h3>
+  <img src="https://content.nike.com/content/dam/one-nike/en_us/season-2016-su/Shop/launch/06-2016/air-jordan-10-retro-london/AIR-JORDAN-10-RETRO-LONDON-MAIN.jpg.transform/default/AIR-JORDAN-10-RETRO-LONDON-MAIN.jpg" alt="london" style="width:290px;height:300px;">
+  <p><a href="http://www.nike.com/hr/en_gb/launch/c/2016-06/air-jordan-10-retro-london">Click here and check them out!</a></p>
+ </section>
+
+ <aside id="sidebar">
+  <h2>Look at Our other shoes</h2>
+  <ul>
+<li><a href="http://solecollector.com/news/2016/06/air-jordan-9-colorway-guide/">Check out our 9 collection!</a></li>
+<li><a href="http://solecollector.com/news/air-jordan-7-the-definitive-guide-to-colorways/">Check out our 7 collection!</a></li>
+<li><a href="solecollector.com/news/2016/06/air-jordan-8-the-definitive-guide-to-colorways/">Check out our 8 collection!</a></li>
+</ul>
+
+</div>
+
+</body>
+</html>
